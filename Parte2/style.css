@@ -10,7 +10,7 @@ header,.content{
 
   .nav {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       height: 100vh;
       list-style: none;
       justify-content:space-around;
@@ -21,9 +21,11 @@ header,.content{
   .nav > li {
       margin: 10px;
       flex-basis: auto;
+      
   }
 
   li {
+
     display: flex;
     border: solid;
     text-align: center;
@@ -36,6 +38,12 @@ header,.content{
 
   /*Device = Tablets, Ipads (portrait) Screen = B/w 600px to 990px*/
     @media (min-width:600px) and (max-width: 990px)  {
+    
+      .nav{
+        display: flex;
+        flex-direction: row;
+      }
+  
 
       
   
@@ -43,6 +51,7 @@ header,.content{
       .nav {
 
         height: auto;
+
 
       }
 
@@ -89,6 +98,7 @@ header,.content{
     
     /* (3) Agrega codigo flex para que aparezcan los encabezados. (Solo necesitas activar flex) */      
     header {
+      display: flex;
 
    }
 
@@ -98,8 +108,9 @@ header,.content{
       .nav {
 
         height: auto;
-
-
+        display: flex;
+        flex-direction: row;
+    
       }
 
     h2 {
@@ -147,6 +158,7 @@ header,.content{
         border: solid;
         border-width: 1px;
         justify-content: flex-start;
+        flex-direction: row;
     }
   }
   
